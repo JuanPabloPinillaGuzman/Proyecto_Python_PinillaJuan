@@ -1,0 +1,20 @@
+{
+    "JPI": {
+        "nombre": "juan",
+        "alias": "JPI",
+        "victoriasJ": 0,
+        "derrotasJ": 0,
+        "victoriasIa": 0,
+        "derrotasIa": 0,
+        "puntajeJ": 0
+    },
+    "JKK": {
+        "nombre": "juan",
+        "alias": "JKK",
+        "victoriasJ": 0,
+        "derrotasJ": 0,
+        "victoriasIa": 0,
+        "derrotasIa": 0,
+        "puntajeJ": 0
+    }
+}
