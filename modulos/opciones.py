@@ -1,10 +1,14 @@
-menuModoDeJuego = """
-1. Uno VS Uno
-2. Uno VS Maquina
-"""
+import sys
+import os
 
-menuOpciones = """
-1.Piedra
-2.Papel
-3.Tijeta
-"""
+def borrar_pantalla():
+    if sys.platform == "linux" or sys.platform == "darwin":
+        os.system("clear")
+    else:
+        os.system("cls")
+
+def pausar_pantalla():
+    if sys.platform == "linux" or sys.platform == "darwin":
+        x = input("Presione una tecla para continuar...")
+    else:
+        os.system("pause")
