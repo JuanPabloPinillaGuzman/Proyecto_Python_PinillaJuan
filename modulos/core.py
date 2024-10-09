@@ -1,25 +1,25 @@
 import os
 import json
 
-MY_DATABASE = None # Base de datos vacia
+MY_DATABASE = None 
 
-def NewFile(param): # Crear archivo json
+def NewFile(param): 
     with open(MY_DATABASE,"w") as wf:
         json.dump(param[0],wf,indent=4)
 
-def ReadFile(): # leer archivo json
+def ReadFile(): 
     with open(MY_DATABASE,"r") as rf:
         return json.load(rf)
 
-def checkFile(param): # Verificar archivo json
+def checkFile(param): 
     data = list(param)
-    if(os.path.isfile(MY_DATABASE)): # Si ya existe lo lee
+    if(os.path.isfile(MY_DATABASE)): 
         if(len(param)):
             data[0].update(ReadFile())
-    else: # Si no existe lo crea
+    else: 
         if(len(param)):
             NewFile(data[0])
 
-def AddData(origin): # Guardar informacion en el archivo json
+def AddData(thechachipun): 
     with open(MY_DATABASE,"w") as rwf:
-        json.dump(origin,rwf,indent=4)
+        json.dump(thechachipun,rwf,indent=4)

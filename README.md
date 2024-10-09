@@ -1,1 +1,2 @@
 # Proyecto_Python_PinillaJuan
+The chachipun tiene dos modos de juego, el primero es un jugador contra otro y el segundo de un jugador contra la maquina(ia). cada jugadores tiene la posibilidad de elegir entre 3 opciones piedra,papel o tijera. 

@@ -1,8 +1,7 @@
 import os
 import modulos.opciones as mo
 import modulos.mensajes as mm
-import modulos.utils as mu
-import modulos.usuarios as ms
+import modulos.usuarios as mu
 import modulos.core as mc
 
 if (__name__ == '__main__'):
@@ -20,7 +19,8 @@ if (__name__ == '__main__'):
             opMenu = int(input('=> '))
             match opMenu:
                 case 1 :
-                    ms.crearUsuario(thechachipun)
+                    mu.crearUsuario(thechachipun)
+                    mu.crearUsuario2(thechachipun)
                 case 2 :
                     pass
                 case _:
